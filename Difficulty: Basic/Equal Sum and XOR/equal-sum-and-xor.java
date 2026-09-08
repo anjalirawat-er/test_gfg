@@ -1,0 +1,10 @@
+class Solution {
+    public int countValues(int n) {
+        // code here
+    int cnt=0;
+       for(int i=0; i<n; i++){
+           if((n+i) == (n^i)) cnt++;
+       }
+       return cnt;    
+    }
+}
